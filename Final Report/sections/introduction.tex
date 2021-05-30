@@ -7,17 +7,17 @@
 Single-particle reconstruction in \acrshort{cryo-EM} is a powerful image-processing tool used to determine the 3D structure of biological macromolecular complexes.
 2D images (micrographs) of a macromolecule are taken by an electron microscope. Essentially, the set of all micrographs for a given macromolecule spans a 3D model of the macromolecule. Thus, single-particle reconstruction is using the micrographs to build a 3D model of the macromolecule.\\
 
-Due to high sensitivity of the biological macromolecules to radiation damage, electron microscope provides limited electron doses when producing micrographs. This and the low contrast of micrographs result in \acrshort{cryo-EM} data having very low \acrfull{SNR}\cite{9016106}.\\
+Due to high sensitivity of the biological macromolecules to radiation damage, electron microscope provides limited electron doses when producing micrographs. This and other factors like low contrast of micrographs and digitalization of the images result in \acrshort{cryo-EM} data having very low \acrfull{SNR}\cite{9016106}.\\
 
-\acrshort{cryo-EM} technology has the potential to offer the ability to analyze different functional and conformational states of macromolecules, an important ability for the field of molecular biology. Practically, it entails the classification of heterogeneous \acrshort{cryo-EM} data.\\
+The \acrshort{cryo-EM} technology has the potential to offer the ability to analyze different functional and conformational states of macromolecules, an important ability for the field of molecular biology. Practically, it entails the classification of heterogeneous \acrshort{cryo-EM} data.\\
 
 Many different approaches for \acrshort{cryo-EM} data classification have been developed. Typically, likelihood optimization algorithms and Bayesian inference frameworks are used to deal with data heterogeneity\cite{sigworth1998maximum,scheres2005fast,scheres2014beam,song2013flexibility,chowdhury2015structural}.\\ 
 
-In our project we propose a different approach to \acrshort{cryo-EM} data classification using \acrfull{CD} algorithms from the field of complex networks. Namely, data will be classified following the steps:
+In our project we propose a different approach for \acrshort{cryo-EM} data classification using \acrfull{CD} algorithms that are common in the field of complex networks. According to our approach, data will be classified following the steps:
 \begin{itemize}
-	\item Converting data into a graph
+	\item Converting data into a weighted graph, where each node corresponds to a sample and the edges between nodes represent the degree of similarity between samples.
 	\item Applying \acrlong{CD} algorithms to partition the graph into distinct communities
-	\item Each vertice in a graph that corresponds with a single sample will be given a label
+	\item Each community represent a single conformation of a sampled macromolecule.
 \end{itemize}
 
 For the sake of an abstraction of the \acrshort{cryo-EM} data we will use the Heterogeneous \acrfull{MRA} statistical model. Throughout our project we use the simplified 1D version of the model.

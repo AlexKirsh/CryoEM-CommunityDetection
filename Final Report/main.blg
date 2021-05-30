@@ -25,44 +25,44 @@ Reallocating 'name_of_file' (item size: 1) to 11 items.
 Reallocating 'name_of_file' (item size: 1) to 22 items.
 A level-1 auxiliary file: sections/appendix.aux
 Database file #1: references.bib
-You've used 17 entries,
+You've used 20 entries,
             2118 wiz_defined-function locations,
-            637 strings with 7325 characters,
-and the built_in function-call counts, 5423 in all, are:
-= -- 515
-> -- 281
+            660 strings with 7698 characters,
+and the built_in function-call counts, 6312 in all, are:
+= -- 604
+> -- 319
 < -- 0
-+ -- 114
-- -- 94
-* -- 433
-:= -- 951
-add.period$ -- 50
-call.type$ -- 17
-change.case$ -- 98
++ -- 130
+- -- 106
+* -- 500
+:= -- 1105
+add.period$ -- 59
+call.type$ -- 20
+change.case$ -- 113
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 178
-empty$ -- 402
-format.name$ -- 94
-if$ -- 1085
+cite$ -- 20
+duplicate$ -- 210
+empty$ -- 471
+format.name$ -- 106
+if$ -- 1265
 int.to.chr$ -- 0
-int.to.str$ -- 17
-missing$ -- 16
-newline$ -- 87
-num.names$ -- 34
-pop$ -- 71
+int.to.str$ -- 20
+missing$ -- 19
+newline$ -- 102
+num.names$ -- 40
+pop$ -- 80
 preamble$ -- 1
-purify$ -- 81
+purify$ -- 93
 quote$ -- 0
-skip$ -- 127
+skip$ -- 150
 stack$ -- 0
-substring$ -- 322
-swap$ -- 17
+substring$ -- 381
+swap$ -- 20
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 68
+type$ -- 80
 warning$ -- 0
-while$ -- 48
-width$ -- 19
-write$ -- 186
+while$ -- 57
+width$ -- 22
+write$ -- 219

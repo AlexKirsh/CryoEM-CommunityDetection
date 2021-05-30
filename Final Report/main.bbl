@@ -24,7 +24,7 @@ Saikat Chowdhury, Stephanie~A Ketcham, Trina~A Schroer, and Gabriel~C Lander.
 
 \bibitem{girvannewman2002}
 Michelle Girvan and Mark Newman.
-\newblock Girvan, m. & newman, m. e. j. community structure in social and
+\newblock Girvan, m. and newman, m. e. j. community structure in social and
   biological networks. proc. natl acad. sci. usa 99, 7821-7826.
 \newblock {\em Proceedings of the National Academy of Sciences of the United
   States of America}, 99:7821--6, 07 2002.
@@ -33,6 +33,11 @@ Michelle Girvan and Mark Newman.
 Roger Guimerà and Luís Amaral.
 \newblock Functional cartography of complex metabolic networks.
 \newblock {\em Nature}, 23:22--231, 01 2005.
+
+\bibitem{10.5555/800044.801546}
+Scott Kirkpatrick, C.~Gelatt, and M.~Vecchi.
+\newblock Optimization by simulated annealing.
+\newblock {\em Science (New York, N.Y.)}, 220:671--80, 06 1983.
 
 \bibitem{Newman_2004}
 M.~E.~J. Newman.
@@ -55,6 +60,11 @@ Usha~Nandini Raghavan, Réka Albert, and Soundar Kumara.
 \newblock Near linear time algorithm to detect community structures in
   large-scale networks.
 \newblock {\em Physical Review E}, 76(3), Sep 2007.
+
+\bibitem{Reichardt_2006}
+Jörg Reichardt and Stefan Bornholdt.
+\newblock Statistical mechanics of community detection.
+\newblock {\em Physical Review E}, 74(1), Jul 2006.
 
 \bibitem{Rosvall_2009}
 M.~Rosvall, D.~Axelsson, and C.~T. Bergstrom.
@@ -88,6 +98,11 @@ Chun~Feng Song, Kostas Papachristos, Shaun Rawson, Markus Huss, Helmut
 V.~A. Traag, L.~Waltman, and N.~J. van Eck.
 \newblock From louvain to leiden: guaranteeing well-connected communities.
 \newblock {\em Scientific Reports}, 9(1), Mar 2019.
+
+\bibitem{RevModPhys.54.235}
+F.~Y. Wu.
+\newblock The potts model.
+\newblock {\em Rev. Mod. Phys.}, 54:235--268, Jan 1982.
 
 \bibitem{zachary1976}
 Wayne Zachary.

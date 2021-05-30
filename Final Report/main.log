@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.18)  26 MAY 2021 20:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.18)  30 MAY 2021 15:06
 entering extended mode
 **./main.tex
 (main.tex
@@ -933,7 +933,7 @@ Package glossaries Info: Writing glossary file main.glo on input line 15.
 
 Package glossaries Info: Writing glossary file main.acn on input line 15.
 (sections/glossary.tex)
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 39
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 35
 .
 
 (C:\Users\uniUser\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
@@ -945,25 +945,25 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 (sections/conclusion.aux) (sections/appendix.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-Package hyperref Info: Link coloring OFF on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+Package hyperref Info: Link coloring OFF on input line 35.
 
 (C:\Users\uniUser\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -977,21 +977,21 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count334
 )
-LaTeX Info: Redefining \ref on input line 39.
-LaTeX Info: Redefining \pageref on input line 39.
-LaTeX Info: Redefining \nameref on input line 39.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
  (main.out) (main.out)
 \@outlinefile=\write9
 \openout9 = `main.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 39.
+LaTeX Info: Redefining \microtypecontext on input line 35.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 39.
+LaTeX Info: Redefining \showhyphens on input line 35.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1136,7 +1136,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 ...6}Conclusion of Aim 3}{13}{subsection.5.6}
+l.35 ...6}Conclusion of Aim 3}{14}{subsection.5.6}
                                                   % [1
 
 
@@ -1151,7 +1151,7 @@ l.35 ...6}Conclusion of Aim 3}{13}{subsection.5.6}
 
 
 (sections/abstract.tex
-<figures/Project_Process.png, id=238, 1086.0575pt x 743.77875pt>
+<figures/Project_Process.png, id=239, 1086.0575pt x 743.77875pt>
 File: figures/Project_Process.png Graphic file (type png)
 <use figures/Project_Process.png>
 Package pdftex.def Info: figures/Project_Process.png  used on input line 13.
@@ -1198,7 +1198,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrlong' on input line 7.
 
-<figures/MRA_example.png, id=329, 803.0pt x 371.3875pt>
+<figures/MRA_example.png, id=330, 803.0pt x 371.3875pt>
 File: figures/MRA_example.png Graphic file (type png)
 <use figures/MRA_example.png>
 Package pdftex.def Info: figures/MRA_example.png  used on input line 23.
@@ -1209,18 +1209,21 @@ Package pdftex.def Info: figures/MRA_example.png  used on input line 23.
 
 
  <./figures/MRA_example.png>]
-<figures/CD.png, id=371, 1030.85126pt x 362.35374pt>
+<figures/CD.png, id=372, 1030.85126pt x 362.35374pt>
 File: figures/CD.png Graphic file (type png)
 <use figures/CD.png>
 Package pdftex.def Info: figures/CD.png  used on input line 58.
 (pdftex.def)             Requested size: 375.80542pt x 132.09491pt.
  [9
 
- <./figures/CD.png>]) [10]
+ <./figures/CD.png>]
+Underfull \vbox (badness 1852) has occurred while \output is active []
+
+ [10])
+[11]
 \openout2 = `sections/aim-1.aux'.
 
-
-(sections/aim-1.tex) [11
+ (sections/aim-1.tex) [12
 
 
 
@@ -1228,7 +1231,7 @@ Package pdftex.def Info: figures/CD.png  used on input line 58.
 ]
 \openout2 = `sections/aim-2.aux'.
 
- (sections/aim-2.tex) [12
+ (sections/aim-2.tex) [13
 
 
 
@@ -1237,7 +1240,7 @@ Package pdftex.def Info: figures/CD.png  used on input line 58.
 \openout2 = `sections/aim-3.aux'.
 
  (sections/aim-3.tex)
-[13
+[14
 
 
 
@@ -1245,7 +1248,7 @@ Package pdftex.def Info: figures/CD.png  used on input line 58.
 ]
 \openout2 = `sections/discussion.aux'.
 
- (sections/discussion.tex) [14
+ (sections/discussion.tex) [15
 
 
 
@@ -1253,30 +1256,20 @@ Package pdftex.def Info: figures/CD.png  used on input line 58.
 ]
 \openout2 = `sections/conclusion.aux'.
 
- (sections/conclusion.tex) [15
+ (sections/conclusion.tex) [16
 
 
 
 
-] (main.bbl
-! Misplaced alignment tab character &.
-l.27 \newblock Girvan, m. &
-                            newman, m. e. j. community structure in social and
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-) [16
+] (main.bbl)
+[17
 
 
 
 ]
 \openout2 = `sections/appendix.aux'.
 
- (sections/appendix.tex) [17
+ (sections/appendix.tex) [18
 
 
 ] (main.aux (sections/preamble.aux)
@@ -1287,13 +1280,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: FB7998182D5A9EF90AEAC22CE9C955EF;6465.
  ) 
 Here is how much of TeX's memory you used:
- 27450 strings out of 479321
- 491569 string characters out of 2855629
- 1109945 words of memory out of 3000000
- 44034 multiletter control sequences out of 15000+600000
- 443014 words of font info for 159 fonts, out of 8000000 for 9000
+ 27462 strings out of 479321
+ 491749 string characters out of 2855629
+ 1112386 words of memory out of 3000000
+ 44033 multiletter control sequences out of 15000+600000
+ 444414 words of font info for 165 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,12n,116p,1008b,586s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 117i,15n,116p,1008b,590s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<
 C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mbx10.pfb><C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
@@ -1311,9 +1304,9 @@ nts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/uniUser/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/uniUser/AppData/Local/
 Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/uniUser/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (18 pages, 793380 bytes).
+Output written on main.pdf (19 pages, 802092 bytes).
 PDF statistics:
- 502 PDF objects out of 1000 (max. 8388607)
- 91 named destinations out of 1000 (max. 500000)
- 38249 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 514 PDF objects out of 1000 (max. 8388607)
+ 95 named destinations out of 1000 (max. 500000)
+ 40297 words of extra memory for PDF output out of 42996 (max. 10000000)
 
