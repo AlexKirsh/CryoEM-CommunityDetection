@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.18)  30 MAY 2021 15:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.18)  11 JUN 2021 11:11
 entering extended mode
 **./main.tex
 (main.tex
@@ -923,47 +923,52 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (C:\Users\uniUser\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
+(C:\Users\uniUser\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.st
+y
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count334
+\c@subtable=\count335
+)
 \glswrite=\write6
 \glo@main@file=\write7
 \openout7 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 15.
+Package glossaries Info: Writing glossary file main.glo on input line 16.
 \glo@acronym@file=\write8
 \openout8 = `main.acn'.
 
-Package glossaries Info: Writing glossary file main.acn on input line 15.
-(sections/glossary.tex)
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 35
+Package glossaries Info: Writing glossary file main.acn on input line 16.
+ (sections/glossary.tex)
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 37
 .
 
 (C:\Users\uniUser\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (main.aux (sections/preamble.aux) (sections/abstract.aux)
-(sections/introduction.aux) (sections/background.aux) (sections/aim-1.aux)
-(sections/aim-2.aux) (sections/aim-3.aux) (sections/discussion.aux)
-(sections/conclusion.aux) (sections/appendix.aux))
+(sections/introduction.aux) (sections/background.aux) (sections/results.aux)
+(sections/discussion.aux) (sections/conclusion.aux) (sections/appendix.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-Package hyperref Info: Link coloring OFF on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+Package hyperref Info: Link coloring OFF on input line 37.
 
 (C:\Users\uniUser\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -975,23 +980,23 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 itlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count334
+\c@section@level=\count336
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
  (main.out) (main.out)
 \@outlinefile=\write9
 \openout9 = `main.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 35.
+LaTeX Info: Redefining \microtypecontext on input line 37.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 35.
+LaTeX Info: Redefining \showhyphens on input line 37.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1002,16 +1007,16 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 (C:\Users\uniUser\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.
 mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count335
+\scratchcounter=\count337
 \scratchdimen=\dimen296
 \scratchbox=\box73
-\nofMPsegments=\count336
-\nofMParguments=\count337
+\nofMPsegments=\count338
+\nofMParguments=\count339
 \everyMPshowfont=\toks53
-\MPscratchCnt=\count338
+\MPscratchCnt=\count340
 \MPscratchDim=\dimen297
-\MPnumerator=\count339
-\makeMPintoPDFobject=\count340
+\MPnumerator=\count341
+\makeMPintoPDFobject=\count342
 \everyMPtoPDFconversion=\toks54
 )
 (C:\Users\uniUser\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf
@@ -1102,7 +1107,7 @@ Package caption Info: End \AtBeginDocument code.
 \openout2 = `sections/preamble.aux'.
 
 (sections/preamble.tex
-<styling/tau-logo.png, id=170, 477.28313pt x 57.21375pt>
+<styling/tau-logo.png, id=82, 477.28313pt x 57.21375pt>
 File: styling/tau-logo.png Graphic file (type png)
 <use styling/tau-logo.png>
 Package pdftex.def Info: styling/tau-logo.png  used on input line 3.
@@ -1132,50 +1137,48 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (C:\Users\uniUser\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.35 ...6}Conclusion of Aim 3}{14}{subsection.5.6}
-                                                  % [1
-
-
-
-
-])
+))
 \tf@toc=\write10
 \openout10 = `main.toc'.
 
- [2]
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.44     \clearpage
+                    [1
+
+
+
+
+]
 \openout2 = `sections/abstract.aux'.
 
-
-(sections/abstract.tex
-<figures/Project_Process.png, id=239, 1086.0575pt x 743.77875pt>
+ (sections/abstract.tex
+<figures/Project_Process.png, id=129, 1086.0575pt x 743.77875pt>
 File: figures/Project_Process.png Graphic file (type png)
 <use figures/Project_Process.png>
-Package pdftex.def Info: figures/Project_Process.png  used on input line 13.
+Package pdftex.def Info: figures/Project_Process.png  used on input line 14.
 (pdftex.def)             Requested size: 375.80542pt x 257.36433pt.
- [3
+ [2
 
 
  <./figures/Project_Process.png>]) (main.lof)
 \tf@lof=\write11
 \openout11 = `main.lof'.
 
- [4
+ [3
 
 
 
 
-]
-(main.lot)
+] (main.lot)
 \tf@lot=\write12
 \openout12 = `main.lot'.
 
- [5
+ [4
 
-] (main.acr) [6
+] (main.acr) [5
 
 ]
 \openout2 = `sections/introduction.aux'.
@@ -1187,7 +1190,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
 (C:\Users\uniUser\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ))
-[7
+[6
 
 
 ]
@@ -1198,115 +1201,127 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrlong' on input line 7.
 
-<figures/MRA_example.png, id=330, 803.0pt x 371.3875pt>
+<figures/MRA_example.png, id=239, 803.0pt x 371.3875pt>
 File: figures/MRA_example.png Graphic file (type png)
 <use figures/MRA_example.png>
 Package pdftex.def Info: figures/MRA_example.png  used on input line 23.
 (pdftex.def)             Requested size: 375.80542pt x 173.81544pt.
-[8
+[7
 
 
 
 
  <./figures/MRA_example.png>]
-<figures/CD.png, id=372, 1030.85126pt x 362.35374pt>
+<figures/CD.png, id=283, 1030.85126pt x 362.35374pt>
 File: figures/CD.png Graphic file (type png)
 <use figures/CD.png>
-Package pdftex.def Info: figures/CD.png  used on input line 58.
+Package pdftex.def Info: figures/CD.png  used on input line 60.
 (pdftex.def)             Requested size: 375.80542pt x 132.09491pt.
- [9
+ [8
 
- <./figures/CD.png>]
-Underfull \vbox (badness 1852) has occurred while \output is active []
+ <./figures/CD.png>] [9]
 
- [10])
-[11]
-\openout2 = `sections/aim-1.aux'.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 166.
 
- (sections/aim-1.tex) [12
+[10] [11])
+\openout2 = `sections/results.aux'.
 
-
-
-
-]
-\openout2 = `sections/aim-2.aux'.
-
- (sections/aim-2.tex) [13
+ (sections/results.tex
+<figures/Project_Process_full.png, id=386, 1422.31375pt x 558.085pt>
+File: figures/Project_Process_full.png Graphic file (type png)
+<use figures/Project_Process_full.png>
+Package pdftex.def Info: figures/Project_Process_full.png  used on input line 2
+4.
+(pdftex.def)             Requested size: 469.75499pt x 184.3219pt.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\acrlong' on input line 31.
 
-
-]
-\openout2 = `sections/aim-3.aux'.
-
- (sections/aim-3.tex)
-[14
+[12
 
 
 
 
-]
+
+ <./figures/Project_Process_full.png>]
+<figures/CDsimple_sim_acc.png, id=398, 640.3925pt x 480.79625pt>
+File: figures/CDsimple_sim_acc.png Graphic file (type png)
+<use figures/CDsimple_sim_acc.png>
+Package pdftex.def Info: figures/CDsimple_sim_acc.png  used on input line 38.
+(pdftex.def)             Requested size: 230.18251pt x 172.81506pt.
+<figures/CDsimple_sim_time.png, id=405, 640.3925pt x 480.79625pt>
+File: figures/CDsimple_sim_time.png Graphic file (type png)
+<use figures/CDsimple_sim_time.png>
+Package pdftex.def Info: figures/CDsimple_sim_time.png  used on input line 43.
+(pdftex.def)             Requested size: 230.18251pt x 172.81506pt.
+) [13
+
+ <./figures/CDsimple_sim_acc.png> <./figures/CDsimple_sim_time.png>]
 \openout2 = `sections/discussion.aux'.
 
- (sections/discussion.tex) [15
-
+ (sections/discussion.tex) [14
 
 
 
 ]
 \openout2 = `sections/conclusion.aux'.
 
- (sections/conclusion.tex) [16
+
+(sections/conclusion.tex) [15
 
 
 
 
-] (main.bbl)
-[17
+] (main.bbl [16
 
 
 
-]
+]) [17]
 \openout2 = `sections/appendix.aux'.
 
- (sections/appendix.tex) [18
+ (sections/appendix.tex)
+[18
 
 
-] (main.aux (sections/preamble.aux)
-(sections/abstract.aux) (sections/introduction.aux) (sections/background.aux)
-(sections/aim-1.aux) (sections/aim-2.aux) (sections/aim-3.aux)
+] (main.aux (sections/preamble.aux) (sections/abstract.aux)
+(sections/introduction.aux) (sections/background.aux) (sections/results.aux)
 (sections/discussion.aux) (sections/conclusion.aux) (sections/appendix.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FB7998182D5A9EF90AEAC22CE9C955EF;6465.
+(rerunfilecheck)             Checksum: BC5820B5DDBC575856ECD59C3BA93A7E;2382.
  ) 
 Here is how much of TeX's memory you used:
- 27462 strings out of 479321
- 491749 string characters out of 2855629
- 1112386 words of memory out of 3000000
- 44033 multiletter control sequences out of 15000+600000
- 444414 words of font info for 165 fonts, out of 8000000 for 9000
+ 27661 strings out of 479321
+ 494382 string characters out of 2855629
+ 1118758 words of memory out of 3000000
+ 44173 multiletter control sequences out of 15000+600000
+ 453607 words of font info for 209 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,15n,116p,1008b,590s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 117i,15n,116p,1114b,693s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<
 C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mbx10.pfb><C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmex10.pfb><C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb><C:/Users/uniUser/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/uniUser/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/uniUser/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/uniUser
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/User
-s/uniUser/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb><C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmsy7.pfb><C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/symbols/msam10.pfb><C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/uniUser/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/uniUser/AppData/Local/
-Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/uniUser/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (19 pages, 802092 bytes).
+1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/uniUser/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/uniUser/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/uniUser/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/un
+iUser/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
+:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r5.pfb><C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb><C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb><C:/Users/uniUser/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/uniUser/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/uniUser/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/uniUse
+r/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+<C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pf
+b><C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.
+pfb><C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri
+8a.pfb>
+Output written on main.pdf (19 pages, 1278673 bytes).
 PDF statistics:
- 514 PDF objects out of 1000 (max. 8388607)
- 95 named destinations out of 1000 (max. 500000)
- 40297 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 516 PDF objects out of 1000 (max. 8388607)
+ 98 named destinations out of 1000 (max. 500000)
+ 50376 words of extra memory for PDF output out of 51595 (max. 10000000)
 

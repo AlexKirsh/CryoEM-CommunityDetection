@@ -9,6 +9,7 @@
 \usepackage{styling/ohsu-dissertation}
 \usepackage{amssymb}
 \usepackage{amsmath}
+\usepackage{subcaption}
 
 % For formatting reasons, we input the list of abbreviations
 % (i.e. glossary) section outside of the document
@@ -21,12 +22,13 @@
 \newcommand{\projecttitle}{Community Detection with applications\\
 to Multireference alignment}
 \newcommand{\projectnum}{20.1.1.2135}
-\newcommand{\projectauthorone}{Tomer Matityahu 312116668}
-\newcommand{\projectauthortwo}{Alexey Kiryushkin 324439876}
+\newcommand{\projectauthorone}{Alexey Kiryushkin 324439876}
+\newcommand{\projectauthortwo}{Tomer Matityahu 312116668}
 \newcommand{\projectmentorone}{Mr. Noam Janco Tel-Aviv University}
 \newcommand{\projectmentortwo}{Dr. Tamir Bendory Tel-Aviv University}
 
 \let\vec\mathbf
+\captionsetup[table]{skip=10pt}
 
 %%
 %% Document Structure
@@ -61,14 +63,7 @@ to Multireference alignment}
     \include{sections/background}
     \clearpage
     
-    \include{sections/aim-1}
-    \clearpage
-    
-    \include{sections/aim-2}
-    \clearpage
-    
-    \include{sections/aim-3}
-    \clearpage
+	\include{sections/results}    
     
     \include{sections/discussion}
     \clearpage
