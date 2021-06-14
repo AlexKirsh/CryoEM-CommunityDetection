@@ -1,0 +1,49 @@
+\center
+
+\section{Results}
+
+\raggedright
+
+To validate the solution we propose, we performed a number of simulations with the aim of testing \acrshort{CD} algorithms on the \acrshort{MRA} problem. We used three types of signals from which \acrshort{MRA} samples were generated:
+
+\begin{itemize}
+\item Rectangular and triangle pulses, as illustrated in \textbf{Fig. \ref{fig:MRA_exmp}}, $K =2$.
+
+\item Normally distributed i.i.d signals, i.e $x_j \sim \mathcal{N}(0,\sigma^2I)$
+
+\item Correlated normally distributed signals, ... 
+\end{itemize}
+All signals have a length of $L=50$ and are normalized.
+Simulations have been run on an Ubuntu 18.04 machine, Intel i5 2.5GHz CPU, 4GB RAM using Python. All \acrshort{CD} algorithms were implemented using CDlib and NetworkX libraries.
+
+\subsection{Process overview}
+\textbf{Fig. \ref{fig:full_process}} shows the full process required to partition a graph generated from \acrshort{MRA} data using \acrlong{CD}. Thus a key requirement is an efficient implementation of each step in the process to minimize the overhead caused by the graph creation.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{"figures/Project_Process_full".png}
+  \caption{\textbf{Full project process.}}
+  \label{fig:full_process}
+\end{figure}
+
+In our project we used the Numpy python package to implement vectorization methods for cross-correlation calculation and graph generation to ensure graph creation will not be the bottleneck of the solution.
+
+\subsection{\acrlong{CD} best performers selection}
+Different \acrshort{CD} algorithms have different methods to find communities within a graph, some methods are more suitable to the \acrshort{MRA} problem than others. We perform a basic simulation on 100 \acrshort{MRA} samples generated from rectangle and triangle signals to measure the accuracy of the partitions made against a true partition of the graph. Execution time was also measured to gain an idea about the different algorithms efficiency. \textbf{Fig. \ref{fig:basic_sim}} shows the results of the simulations. Upon observing the clustering quality simulation we conclude that there is a set of algorithms that perform similarly well, while other algorithms fail to partition the data even for high \acrshort{SNR}. These algorithms (Fast Greedy, Leiden, Louvain, Leading Eigenvector, Walktrap) are selected as the best performers to be evaluated against KMeans. Spinglass algorithm also partitioned the data quite accurately, but the execution time simulation shows that the algorithm is slow, thus cannot be used on large datasets.
+
+\clearpage
+
+\begin{figure}[h]
+\begin{subfigure}[h]{0.49\linewidth}
+\includegraphics[width=\linewidth]{"figures/CDsimple_sim_acc".png}
+\caption{\textbf{Clustering quality simulation.} \acrshort{NMI} score of the partitions created by each \acrshort{CD} algorithm as a function of the samples \acrshort{SNR}.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[h]{0.49\linewidth}
+\includegraphics[width=\linewidth]{"figures/CDsimple_sim_time".png}
+\caption{\textbf{Execution time simulation.} Average execution time of each \acrshort{CD} algorithm as a function of the samples \acrshort{SNR}.}
+\end{subfigure}
+\caption{\textbf{\acrlong{CD} algorithms performance evaluation.} In both graphs, for each \acrshort{SNR} value ten different random graphs were evaluated and the results were averaged.}
+\label{fig:basic_sim}
+\end{figure}
+

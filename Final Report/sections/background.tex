@@ -51,7 +51,9 @@ Our objective is the partition of all \acrshort{MRA} observations into $K$ non o
 
 Community, in a broad sense, is a set of nodes, which are similar to each other and dissimilar from the rest of the network. \acrfull{CD} algorithms aim to find these communities in a graph. \textbf{Fig. \ref{fig:CD}} shows the result of a \acrshort{CD} algorithm.
 
-Finding communities in a graph carries a great value to revealing hidden patterns in data and has many use-cases, such as social behaviour prediction \cite{zachary1976} or medical diagnosis\cite{guimera2005}. Evidently, \acrlong{CD} algorithms are well studied and widely used. In our project we study a group of state-of-the-art \acrshort{CD} algorithms and apply them on \acrshort{MRA} data.
+Finding communities in a graph carries a great value to revealing hidden patterns in data and has many use-cases, such as social behaviour prediction \cite{zachary1976} or medical diagnosis\cite{guimera2005}. Evidently, \acrlong{CD} algorithms are well studied and widely used. In our project we study a group of state-of-the-art \acrshort{CD} algorithms and apply them on \acrshort{MRA} data.\\
+
+It is important to note that \acrshort{CD} problem is known to be \textsc{NP}-hard\cite{Fortunato_2010}, meaning that the most efficient \acrshort{CD} algorithm that partitions a graph correctly has an exponential time complexity (that is, unless \textsc{P} $=$ \textsc{NP}), making it infeasible to run on large graphs. For this reason, it is common to use \textit{heuristic} algorithms that provide approximate solution to the \acrshort{CD} problem, with the advantage of polynomial time complexity.
 
 \begin{figure}[h]
   \centering
@@ -120,8 +122,108 @@ Leiden also uses a faster method for implementing the nodes transitions between 
 \sum{i\neq j} d_{ij}\cdot \underbrace{(1-A_{ij}) (1-\delta{\sigma_i,\sigma_j)}}_{Non-existing External Edges}
 \end{align*}
 
-where $\vec{A}$ is the adjacency matrix of the graph, $a_{ij}$,$b_{ij}$,$c_{ij}$ and $d_{ij}$ are hyper parameters which affect the contribution of each factor to the hamiltonian and can be changed and $\delta(a,b)$ symbolizes Kronecker delta.
-In order to minimize the hamiltonian, the algorithm also uses simulated annealing\cite{10.5555/800044.801546}
+where $\vec{A}$ is the adjacency matrix (\textbf{Eq. \ref{eqn:adj_matrix}}) of the graph, $a_{ij}$,$b_{ij}$,$c_{ij}$ and $d_{ij}$ are hyper parameters which affect the contribution of each factor to the hamiltonian and can be changed and $\delta(a,b)$ symbolizes Kronecker delta.
+In order to minimize the hamiltonian, the algorithm also uses simulated annealing\cite{10.5555/800044.801546}.
 
 \end{itemize}
 
+\textbf{Table \ref{tab:complex}} summarizes time complexities of each algorithm.
+
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Algorithm} & \textbf{Complexity} & \textbf{Notes}\\
+		\hline
+		Edge Betweenness & $O(|E||V|(|E|+|V|))$ & \\
+		Fast Greedy & $O(|V|(|E|+|V|))$ & \\
+		Label Propagation & $O(|E|)$ & \\
+		Leading Eigenvector & $O(|V|(|E|+|V|))$ & \\
+		Walktrap & $O(D|E||V|^2)$ & $D$ the size of the dendrogram \\
+		Infomap & $O(t^2|E|)$ & $t$ maximal number of iterations\\
+		Louvain & $O(|E|)$ & \\
+		Leiden & $O(|E|)$ & \begin{tabular}{@{}c@{}}
+Considered to be superior to Louvain,\\ i.e its constant factor is smaller		
+\end{tabular}\\
+		SpinGlass & $O(|V|^{3.2})$ & For sparse graphs\\
+		\hline
+		\end{tabular}
+		\caption{\textbf{\acrshort{CD} algorithms time complexities.} $|E|$ represents the total number of edges in the graph and $|V|$ the total number of nodes (vertices).}
+		\label{tab:complex}
+	\end{center}
+\end{table}
+
+
+\subsection{Performance evaluation}
+In order to compare performance between the different \acrshort{CD} algorithms, several criteria of performance evaluation need to be defined:
+\begin{itemize}
+
+\item \textbf{The (asymptotic) running time complexity of each algorithm}, or for the sake of simplicity, 'how many steps the algorithm should do on given inputs until it converges, depending on the input's size'. For this criterion, we used the traditional big-O notation. 
+
+\item \textbf{A scoring function to measure the accuracy of the partition an algorithm yielded}, by measuring the degree of similarity between the partition produced by an algorithm and the correct partition of the graph, i.e. the \textit{ground truth}.\\
+As was mentioned previously, \acrshort{CD} algorithms are heuristic for solving the \textsc{NP}-hard graph partition problem, therefore cannot always cluster the graph perfectly, assuming that \textsc{P} $\neq$ \textsc{NP}. Thus a scoring function can be introduced to provide us a way to quantify the quality of each partition. In our project we chose the \acrfull{NMI} as the accuracy score function, as it is considered a good method to measure \acrshort{CD} algorithms partition accuracy\cite{Danon_2005}.\\
+We start by introducing the \acrfull{MI} scoring function, which incorporates ideas from the information theory. 
+Let $G=(V,E)$ be an unweighed graph and let $P$ be a partition of the graph to $M$ communities $C_1,C_2,…,C_M$. \textit{Shannon entropy} is then defined as
+\begin{equation}
+\label{eqn:Shannon}
+H(P)= -\sum_{i} \frac{|C_i|}{V}log(\frac{|C_i|}{V})
+\end{equation}
+where $|C_i|$ is the number of nodes in $C_i$. It is also convenient to define the \textit{conditional Shannon entropy}
+\begin{equation}
+\label{eqn:cond_Shannon}
+H(P_{1}|P_{2})= -\sum_{i,j} \frac{|C_{i}\cap C_{j}|}{V}log(\frac{|C_{i}\cap C_{j}|}{V})
+\end{equation}
+where $P_1$,$P_1$ different partitions of $G$, and $|C_i \cap C_j|$ number of nodes that belong to both $C_i$,$C_j$. \acrshort{MI} is then defined as:
+\begin{equation}
+\label{eqn:MI}
+MI(P_{1},P_{2}) = H(P_{1})-H(P_{1}|P_{2})
+\end{equation}
+One can note that the range of the \acrshort{MI} quality function is $[0,\infty)$ making it impractical for comparing many cases. Thus it is useful to define the \acrshort{NMI} function:
+\begin{equation}
+\label{eqn:NMI}
+NMI(P_{1},P_{2})= \frac{2MI(P_{1},P_{2})}{H(P_{1})+H(P_{2})}
+\end{equation} 
+Note that the range of the \acrshort{NMI} quality function is $[0,1]$, where \acrshort{NMI}=1 if the partitions are identical and \acrshort{NMI}=0 if the partitions are completely different.\\
+A very useful property of the \acrshort{NMI} is its independency from the number of communities in each partition, providing us a convenient tool to compare two partitions with different number of communities.
+
+\end{itemize}
+A few important remarks about performance measurement should be noted:
+\begin{enumerate}
+
+\item \textbf{There is no absolute performance metric}, meaning
+an algorithm's performance may receive a 'good' score by some of the criteria but a 'bad' score by other criteria.
+
+\item \textbf{An algorithm performance may depend on the input itself}, that is, an algorithm may perform well on some inputs, but badly on others. In order to reduce this dependability, we should analyze an algorithm's performance by considering the \textit{expectation} of its performance according to each criterion on several random inputs.
+
+\item \textbf{Comparison between algorithms should be done on the same inputs exactly}. In other words, it is not enough to run each algorithm on several random inputs separately, and then to compare the results.
+
+\end{enumerate}
+
+\vspace{10pt}
+
+\subsection{K-means algorithm}
+In order to examine if \acrshort{CD} is beneficial compared to other clustering methods, we compare the \acrshort{CD} algorithms performance against the traditional K-means algorithm.
+K-means is a well known clustering algorithm used widely for pattern recognition applications, below is the description of the K-means algorithm\cite{10.5555/46712}.\\
+Let $X=x_1,...,x_n \in \mathbb{R}^L$ be the set of $L$-dimensional points to be clustered into $K$ clusters, $C=c_1,...,c_K$. Each cluster is represented by a centroid $\mu_k$, $k=1,...,K$, which is the mean of all points in the cluster. K-means finds a partition of $X$ into $K$ clusters such that the squared error of the distances between the centroids of the clusters and the points in the corresponding clusters is minimized. Therefore, the goal of K-means is to minimize the function in \textbf{Eq. \ref{eqn:kmeans_error}}.
+
+\begin{equation}
+\label{eqn:kmeans_error}
+J(C)=\sum_{k=1}^K{\sum_{x_i \in c_k}{||x_i-\mu_k||^2}}
+\end{equation} 
+
+Minimizing the given function is an \textsc{NP}-hard problem \cite{Drineas_1999}, thus can only converge to a local minimum.\\
+The algorithm's operation can be summarized in the following steps:
+\begin{enumerate}
+\item Select an initial partition of the data set into $K$ partitions ($K$ is a parameter of the algorithm). In our project we used the Kmeans++ implementation\cite{10.5555/1283383.1283494}:
+	\begin{enumerate}
+	\item Choose a random point from $X$ to be the first centroid.
+	\item Choose the next centroid $\mu_k$, selecting $\mu_k=x' \in X$ with probability $\frac{D(x')^2}{\sum_{x \in X}{D(x)^2}}$, where $D$ is distance from the centroid.
+	\item Repeat steps (b) until $K$ centroids were chosen.
+	\end{enumerate}
+\item Assign each point in the data set to its closest centroid, i.e assign $x_i$ to cluster $c_k$ such that $||x_i-\mu_k||^2$ is minimal for $k=1,...,K$.
+\item Recalculate the centroids of the new clusters by computing the mean of each new cluster.
+\item Repeat steps (2) and (3) until cluster membership stabilizes.
+\end{enumerate}
+For a fixed maximal number of iterations $t$ the time complexity of K-means is $O(ndKt)$ where $n$ is the number of data points, $d$ the dimension of each point and $K$ number of specified clusters.
+
+\clearpage

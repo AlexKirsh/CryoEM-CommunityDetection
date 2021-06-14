@@ -1,41 +1,19 @@
-\contentsline {section}{Abstract}{3}{section*.1}%
-\contentsline {section}{List of Figures}{4}{section*.3}%
-\contentsline {section}{List of Tables}{5}{section*.4}%
-\contentsline {section}{List of Abbreviations}{6}{section*.5}%
-\contentsline {section}{\numberline {1}Introduction}{7}{section.1}%
-\contentsline {section}{\numberline {2}Background}{8}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Heterogeneous 1D \acrlong {MRA} model}{8}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Community detection}{9}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Aim 1 Title}{12}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Introduction to Aim 1}{12}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Background to Aim 1}{12}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Methods}{12}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Some crucial details about the method}{12}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Conceptual model, research questions and hypotheses}{12}{subsubsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.4}Results of Aim 1}{12}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Discussion of Aim 1}{12}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Conclusion of Aim 1}{12}{subsection.3.6}%
-\contentsline {section}{\numberline {4}Aim 2 Title}{13}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Introduction to Aim 2}{13}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Background to Aim 2}{13}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Methods}{13}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Some crucial details about the method}{13}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Conceptual model, research questions and hypotheses}{13}{subsubsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.4}Results of Aim 2}{13}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Discussion of Aim 2}{13}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Conclusion of Aim 2}{13}{subsection.4.6}%
-\contentsline {section}{\numberline {5}Aim 3 Title}{14}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Introduction to Aim 3}{14}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Background to Aim 3}{14}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Methods}{14}{subsection.5.3}%
-\contentsline {subsubsection}{\numberline {5.3.1}Some crucial details about the method}{14}{subsubsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.2}Conceptual model, research questions and hypotheses}{14}{subsubsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.4}Results of Aim 3}{14}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Discussion of Aim 3}{14}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Conclusion of Aim 3}{14}{subsection.5.6}%
-\contentsline {section}{\numberline {6}Discussion}{15}{section.6}%
-\contentsline {subsection}{\numberline {6.1}A subheading}{15}{subsection.6.1}%
-\contentsline {section}{\numberline {7}Conclusion}{16}{section.7}%
-\contentsline {subsection}{\numberline {7.1}A subheading}{16}{subsection.7.1}%
-\contentsline {section}{\numberline {8}References}{17}{section.8}%
-\contentsline {section}{\numberline {9}Appendix}{18}{section.9}%
+\contentsline {section}{Abstract}{2}{section*.1}%
+\contentsline {section}{List of Figures}{3}{section*.3}%
+\contentsline {section}{List of Tables}{4}{section*.4}%
+\contentsline {section}{List of Abbreviations}{5}{section*.5}%
+\contentsline {section}{\numberline {1}Introduction}{6}{section.1}%
+\contentsline {section}{\numberline {2}Background}{7}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Heterogeneous 1D \acrlong {MRA} model}{7}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Community detection}{8}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Performance evaluation}{10}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}K-means algorithm}{11}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Results}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Process overview}{12}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}\acrlong {CD} best performers selection}{12}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Discussion}{14}{section.4}%
+\contentsline {subsection}{\numberline {4.1}A subheading}{14}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Conclusion}{15}{section.5}%
+\contentsline {subsection}{\numberline {5.1}A subheading}{15}{subsection.5.1}%
+\contentsline {section}{\numberline {6}References}{16}{section.6}%
+\contentsline {section}{\numberline {7}Appendix}{18}{section.7}%
