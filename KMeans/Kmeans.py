@@ -34,7 +34,7 @@ def kmeans(y,K,max_iterations=100):
     for _ in range(max_iterations):
         # Recalculate centroids by template matching (align all points in cluster with the first point, then compute mean of cluster)
         centroids = [np.array([np.roll(y[P==i,:][n], np.argmax(ifft(fft(y[P==i,:][n]).conj()
-                    * fft(y[P==i,:][0])).real)) for n in range(len(y[P==i,:]))]).mean(axis=0) for i in range(K)]
+                    * fft(y[P==i,:][0])).real)) for n in range(len(y[P==i,:]))]).mean(axis=0) for i in np.unique(P)]
         tmp = random_argmin(calc_dist(y, centroids))
         if np.array_equal(P,tmp):break
         P = tmp
