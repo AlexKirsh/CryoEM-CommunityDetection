@@ -9,29 +9,27 @@ To validate the solution we propose, we performed a number of simulations with t
 \begin{itemize}
 \item Rectangular and triangle pulses, as illustrated in \textbf{Fig. \ref{fig:MRA_exmp}}, $K =2$.
 
-\item Normally distributed i.i.d signals, i.e $x_j \sim \mathcal{N}(0,\sigma^2I)$
+\item Normally distributed i.i.d signals, i.e $x_j \sim \mathcal{N}(0,\sigma^2I)$.
 
-\item Correlated normally distributed signals, ... 
+\item Correlated normally distributed signals, i.e $x_j \sim \mathcal{N}(0,\Sigma)$, $\Sigma$ the covariance matrix.
 \end{itemize}
 All signals have a length of $L=50$ and are normalized.
-Simulations have been run on an Ubuntu 18.04 machine, Intel i5 2.5GHz CPU, 4GB RAM using Python. All \acrshort{CD} algorithms were implemented using CDlib and NetworkX libraries.
+Simulations were executed on an Ubuntu 18.04 machine, Intel i5 2.5GHz CPU, 4GB RAM using Python. All \acrshort{CD} algorithms were implemented using CDlib and NetworkX libraries.
 
 \subsection{Process overview}
-\textbf{Fig. \ref{fig:full_process}} shows the full process required to partition a graph generated from \acrshort{MRA} data using \acrlong{CD}. Thus a key requirement is an efficient implementation of each step in the process to minimize the overhead caused by the graph creation.
+\textbf{Fig. \ref{fig:full_process}} shows the full process required to partition a graph generated from \acrshort{MRA} data using \acrlong{CD}. Thus a key requirement is an efficient implementation of each step in the process to minimize the overhead caused by the graph creation. In our project we used the Numpy python package to implement vectorization methods for cross-correlation calculation and graph generation to ensure graph creation will not be the bottleneck of the solution.
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=\textwidth]{"figures/Project_Process_full".png}
-  \caption{\textbf{Full project process.}}
+  \caption{\textbf{Full process.} Full process of graph creation and partition by \acrshort{CD}.}
   \label{fig:full_process}
 \end{figure}
 
-In our project we used the Numpy python package to implement vectorization methods for cross-correlation calculation and graph generation to ensure graph creation will not be the bottleneck of the solution.
+\clearpage
 
 \subsection{\acrlong{CD} best performers selection}
-Different \acrshort{CD} algorithms have different methods to find communities within a graph, some methods are more suitable to the \acrshort{MRA} problem than others. We perform a basic simulation on 100 \acrshort{MRA} samples generated from rectangle and triangle signals to measure the accuracy of the partitions made against a true partition of the graph. Execution time was also measured to gain an idea about the different algorithms efficiency. \textbf{Fig. \ref{fig:basic_sim}} shows the results of the simulations. Upon observing the clustering quality simulation we conclude that there is a set of algorithms that perform similarly well, while other algorithms fail to partition the data even for high \acrshort{SNR}. These algorithms (Fast Greedy, Leiden, Louvain, Leading Eigenvector, Walktrap) are selected as the best performers to be evaluated against KMeans. Spinglass algorithm also partitioned the data quite accurately, but the execution time simulation shows that the algorithm is slow, thus cannot be used on large datasets.
-
-\clearpage
+Different \acrshort{CD} algorithms have different methods to find communities within a graph, some methods are more suitable to the \acrshort{MRA} problem than others. We perform a basic simulation on 100 \acrshort{MRA} samples generated from rectangle and triangle signals to measure the accuracy of the partitions made against a true partition of the graph. Execution time was also measured to gain an idea about the different algorithms efficiency. \textbf{Fig. \ref{fig:basic_sim}} shows the results of the simulations. Upon observing the clustering quality simulation we conclude that there is a set of algorithms that perform similarly well, while other algorithms fail to partition the data even for high \acrshort{SNR}. These algorithms (Fast Greedy, Leiden, Louvain, Leading Eigenvector, Walktrap) are selected as the best performers to be evaluated against KMeans. Spinglass algorithm also partitioned the data quite accurately, but the execution time simulation shows that the algorithm is slower to other algorithms, thus should not be used on large datasets.
 
 \begin{figure}[h]
 \begin{subfigure}[h]{0.49\linewidth}
@@ -47,3 +45,72 @@ Different \acrshort{CD} algorithms have different methods to find communities wi
 \label{fig:basic_sim}
 \end{figure}
 
+\subsection{Community Detection and KMeans comparison}
+In order to evaluate the effectiveness of \acrshort{CD} against other clustering methods we used the modified KMeans algorithm.
+In the simulations below 1000 \acrshort{MRA} samples were generated for different values of $K$. For each \acrshort{SNR} value ten different sets of 1000 samples were generated, and the performances of the algorithms were averaged over the sets. \textbf{Fig. \ref{fig:lowK_sim}} shows clustering quality and execution time for $K=2$, i.e \acrshort{MRA} samples were generated from two distinct signals. \textbf{Fig. \ref{fig:medK_sim}} and \textbf{Fig. \ref{fig:highK_sim}} show the clustering quality for higher values of $K$. Execution times trends didn't change much for higher $K$, the simulation results can be found in the Appendix.
+
+\begin{figure}[h]
+\begin{subfigure}[b]{0.49\linewidth}
+\includegraphics[width=\linewidth]{"figures/RectTrian_sim_acc".png}
+\caption{\textbf{Clustering quality simulation.} Rectangle and Triangle.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.49\linewidth}
+\includegraphics[width=\linewidth]{"figures/RectTrian_sim_time".png}
+\caption{\textbf{Execution time simulation.} Rectangle and Triangle.}
+\end{subfigure}
+\vskip\baselineskip
+\begin{subfigure}[b]{0.49\linewidth}
+\includegraphics[width=\linewidth]{"figures/Standard_lowK_sim_acc".png}
+\caption{\textbf{Clustering quality simulation.} Normal i.i.d.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.49\linewidth}
+\includegraphics[width=\linewidth]{"figures/Standard_lowK_sim_time".png}
+\caption{\textbf{Execution time simulation.} Normal i.i.d.}
+\end{subfigure}
+\vskip\baselineskip
+\begin{subfigure}[b]{0.49\linewidth}
+\includegraphics[width=\linewidth]{"figures/Corr_lowK_sim_acc".png}
+\caption{\textbf{Clustering quality simulation.} Correlated normal.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.49\linewidth}
+\includegraphics[width=\linewidth]{"figures/Corr_lowK_sim_time".png}
+\caption{\textbf{Execution time simulation.} Correlated normal.}
+\end{subfigure}
+\caption{\textbf{Low $K$ \acrshort{CD} and KMeans comparison. $K=2$} }
+\label{fig:lowK_sim}
+\end{figure}
+
+\clearpage
+
+\begin{figure}
+\begin{subfigure}[b]{0.49\linewidth}
+\includegraphics[width=\linewidth]{"figures/Standard_medK_sim_acc".png}
+\caption{\textbf{Clustering quality simulation.} Normal i.i.d.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.49\linewidth}
+\includegraphics[width=\linewidth]{"figures/Corr_medK_sim_acc".png}
+\caption{\textbf{Clustering quality simulation.} Correlated normal.}
+\end{subfigure}
+\caption{\textbf{Medium $K$ \acrshort{CD} and KMeans comparison.} $K=5$}
+\label{fig:medK_sim}
+\end{figure}
+
+\begin{figure}
+\begin{subfigure}[b]{0.49\linewidth}
+\includegraphics[width=\linewidth]{"figures/Standard_highK_sim_acc".png}
+\caption{\textbf{Clustering quality simulation.} Normal i.i.d.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.49\linewidth}
+\includegraphics[width=\linewidth]{"figures/Corr_highK_sim_acc".png}
+\caption{\textbf{Clustering quality simulation.} Correlated normal.}
+\end{subfigure}
+\caption{\textbf{High $K$ \acrshort{CD} and KMeans comparison.} $K=10$}
+\label{fig:highK_sim}
+\end{figure}
+
+\clearpage

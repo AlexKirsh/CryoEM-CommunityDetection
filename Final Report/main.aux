@@ -26,40 +26,98 @@
 \@glsorder{word}
 \@input{sections/abstract.aux}
 \@writefile{toc}{\contentsline {section}{List of Figures}{3}{section*.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{List of Tables}{4}{section*.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{List of Abbreviations}{5}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{List of Tables}{3}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{List of Abbreviations}{3}{section*.5}\protected@file@percent }
 \@input{sections/introduction.aux}
-\@input{sections/background.aux}
-\@input{sections/results.aux}
-\@input{sections/discussion.aux}
-\@input{sections/conclusion.aux}
+\citation{boumal2018heterogeneous}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background}{5}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Heterogeneous 1D \acrlong {MRA} model}{5}{subsection.2.1}\protected@file@percent }
+\newlabel{eqn:MRA_obs}{{1}{5}{Heterogeneous 1D \acrlong {MRA} model}{equation.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {Example of \acrshort {MRA} observations at different SNR levels.} Each column shows a shifted distinct signal at different noise levels. We can see that for low \acrshort {SNR} the task of signal estimation is quite challenging.\relax }}{5}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:MRA_exmp}{{2}{5}{\textbf {Example of \acrshort {MRA} observations at different SNR levels.} Each column shows a shifted distinct signal at different noise levels. We can see that for low \acrshort {SNR} the task of signal estimation is quite challenging.\relax }{figure.caption.7}{}}
+\newlabel{eqn:sim_def}{{2}{5}{Heterogeneous 1D \acrlong {MRA} model}{equation.2.2}{}}
+\newlabel{eqn:sim_FFT}{{3}{5}{Heterogeneous 1D \acrlong {MRA} model}{equation.2.3}{}}
+\citation{zachary1976}
+\citation{guimera2005}
+\citation{Fortunato_2010}
+\citation{girvannewman2002}
+\citation{Newman_2004}
+\citation{Raghavan_2007}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Community detection}{6}{subsection.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Graph partition by \acrlong {CD}.} In this example for the sake of simplicity an unweighed graph is used. Note that in our project we used weighted graphs.\relax }}{6}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:CD}{{3}{6}{\textbf {Graph partition by \acrlong {CD}.} In this example for the sake of simplicity an unweighed graph is used. Note that in our project we used weighted graphs.\relax }{figure.caption.8}{}}
+\newlabel{eqn:modularity}{{4}{6}{Community detection}{equation.2.4}{}}
+\citation{Newman_2006}
+\citation{Pons_2006}
+\citation{Rosvall_2009}
+\citation{Blondel_2008}
+\citation{Traag_2019}
+\citation{Reichardt_2006}
+\citation{RevModPhys.54.235}
+\newlabel{eqn:adj_matrix}{{5}{7}{Community detection}{equation.2.5}{}}
+\newlabel{eqn:modularity_matrix}{{6}{7}{Community detection}{equation.2.6}{}}
+\citation{10.5555/800044.801546}
+\citation{Danon_2005}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \textbf  {\acrshort {CD} algorithms time complexities.} $|E|$ represents the total number of edges in the graph and $|V|$ the total number of nodes (vertices).\relax }}{8}{table.caption.9}\protected@file@percent }
+\newlabel{tab:complex}{{1}{8}{\textbf {\acrshort {CD} algorithms time complexities.} $|E|$ represents the total number of edges in the graph and $|V|$ the total number of nodes (vertices).\relax }{table.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Performance evaluation}{8}{subsection.2.3}\protected@file@percent }
+\newlabel{eqn:Shannon}{{7}{8}{Performance evaluation}{equation.2.7}{}}
+\newlabel{eqn:cond_Shannon}{{8}{8}{Performance evaluation}{equation.2.8}{}}
+\citation{10.5555/46712}
+\citation{Drineas_1999}
+\citation{10.5555/1283383.1283494}
+\newlabel{eqn:MI}{{9}{9}{Performance evaluation}{equation.2.9}{}}
+\newlabel{eqn:NMI}{{10}{9}{Performance evaluation}{equation.2.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Modified K-means algorithm}{9}{subsection.2.4}\protected@file@percent }
+\newlabel{eqn:kmeans_error}{{11}{9}{Modified K-means algorithm}{equation.2.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{10}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Process overview}{10}{subsection.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textbf  {Full process.} Full process of graph creation and partition by \acrshort {CD}.\relax }}{10}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:full_process}{{4}{10}{\textbf {Full process.} Full process of graph creation and partition by \acrshort {CD}.\relax }{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}\acrlong {CD} best performers selection}{11}{subsection.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {\acrlong {CD} algorithms performance evaluation.} In both graphs, for each \acrshort {SNR} value ten different random graphs were evaluated and the results were averaged.\relax }}{11}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:basic_sim}{{5}{11}{\textbf {\acrlong {CD} algorithms performance evaluation.} In both graphs, for each \acrshort {SNR} value ten different random graphs were evaluated and the results were averaged.\relax }{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Community Detection and KMeans comparison}{11}{subsection.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \textbf  {Low $K$ \acrshort {CD} and KMeans comparison. $K=2$} \relax }}{12}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:lowK_sim}{{6}{12}{\textbf {Low $K$ \acrshort {CD} and KMeans comparison. $K=2$} \relax }{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textbf  {Medium $K$ \acrshort {CD} and KMeans comparison.} $K=5$\relax }}{13}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:medK_sim}{{7}{13}{\textbf {Medium $K$ \acrshort {CD} and KMeans comparison.} $K=5$\relax }{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \textbf  {High $K$ \acrshort {CD} and KMeans comparison.} $K=10$\relax }}{13}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:highK_sim}{{8}{13}{\textbf {High $K$ \acrshort {CD} and KMeans comparison.} $K=10$\relax }{figure.caption.14}{}}
+\citation{Bendory_2018}
+\citation{Bendory_2018}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{14}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{14}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Further work}{14}{subsection.5.1}\protected@file@percent }
 \bibstyle{plain}
 \bibdata{references}
 \bibcite{10.5555/1283383.1283494}{1}
 \bibcite{9016106}{2}
-\bibcite{Blondel_2008}{3}
-\bibcite{boumal2018heterogeneous}{4}
-\bibcite{chowdhury2015structural}{5}
-\bibcite{Danon_2005}{6}
-\bibcite{Drineas_1999}{7}
-\bibcite{Fortunato_2010}{8}
-\bibcite{girvannewman2002}{9}
-\bibcite{guimera2005}{10}
-\bibcite{10.5555/46712}{11}
-\bibcite{10.5555/800044.801546}{12}
-\bibcite{Newman_2004}{13}
-\bibcite{Newman_2006}{14}
-\bibcite{Pons_2006}{15}
-\bibcite{Raghavan_2007}{16}
-\bibcite{Reichardt_2006}{17}
-\bibcite{Rosvall_2009}{18}
-\bibcite{scheres2014beam}{19}
-\bibcite{scheres2005fast}{20}
-\bibcite{sigworth1998maximum}{21}
-\bibcite{song2013flexibility}{22}
-\@writefile{toc}{\contentsline {section}{\numberline {6}References}{16}{section.6}\protected@file@percent }
-\bibcite{Traag_2019}{23}
-\bibcite{RevModPhys.54.235}{24}
-\bibcite{zachary1976}{25}
+\bibcite{Bendory_2018}{3}
+\bibcite{Blondel_2008}{4}
+\bibcite{boumal2018heterogeneous}{5}
+\bibcite{chowdhury2015structural}{6}
+\bibcite{OHSU-overleaf-dissertation-template}{7}
+\bibcite{Danon_2005}{8}
+\bibcite{Drineas_1999}{9}
+\bibcite{Fortunato_2010}{10}
+\bibcite{girvannewman2002}{11}
+\bibcite{guimera2005}{12}
+\bibcite{10.5555/46712}{13}
+\bibcite{10.5555/800044.801546}{14}
+\bibcite{Newman_2004}{15}
+\bibcite{Newman_2006}{16}
+\bibcite{Pons_2006}{17}
+\bibcite{Raghavan_2007}{18}
+\bibcite{Reichardt_2006}{19}
+\bibcite{Rosvall_2009}{20}
+\bibcite{scheres2014beam}{21}
+\bibcite{scheres2005fast}{22}
+\bibcite{sigworth1998maximum}{23}
+\@writefile{toc}{\contentsline {section}{\numberline {6}References}{15}{section.6}\protected@file@percent }
+\bibcite{song2013flexibility}{24}
+\bibcite{Traag_2019}{25}
+\bibcite{RevModPhys.54.235}{26}
+\bibcite{zachary1976}{27}
 \@input{sections/appendix.aux}
-\gdef \@abspage@last{19}
+\gdef \@abspage@last{18}

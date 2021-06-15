@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.18)  11 JUN 2021 11:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.18)  15 JUN 2021 13:52
 entering extended mode
 **./main.tex
 (main.tex
@@ -946,8 +946,7 @@ LaTeX Font Info:    Trying to load font information for T1+ptm on input line 37
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (main.aux (sections/preamble.aux) (sections/abstract.aux)
-(sections/introduction.aux) (sections/background.aux) (sections/results.aux)
-(sections/discussion.aux) (sections/conclusion.aux) (sections/appendix.aux))
+(sections/introduction.aux) (sections/appendix.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
@@ -1167,18 +1166,14 @@ Package pdftex.def Info: figures/Project_Process.png  used on input line 14.
 \tf@lof=\write11
 \openout11 = `main.lof'.
 
- [3
-
-
-
-
-] (main.lot)
+ (main.lot)
 \tf@lot=\write12
 \openout12 = `main.lot'.
 
- [4
+ (main.acr) [3
 
-] (main.acr) [5
+
+
 
 ]
 \openout2 = `sections/introduction.aux'.
@@ -1190,114 +1185,178 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
 (C:\Users\uniUser\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ))
-[6
+[4
 
 
-]
-\openout2 = `sections/background.aux'.
-
- (sections/background.tex
+] (sections/background.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrlong' on input line 7.
 
-<figures/MRA_example.png, id=239, 803.0pt x 371.3875pt>
+<figures/MRA_example.png, id=250, 803.0pt x 371.3875pt>
 File: figures/MRA_example.png Graphic file (type png)
 <use figures/MRA_example.png>
 Package pdftex.def Info: figures/MRA_example.png  used on input line 23.
 (pdftex.def)             Requested size: 375.80542pt x 173.81544pt.
-[7
-
+[5
 
 
 
  <./figures/MRA_example.png>]
-<figures/CD.png, id=283, 1030.85126pt x 362.35374pt>
+<figures/CD.png, id=292, 1030.85126pt x 362.35374pt>
 File: figures/CD.png Graphic file (type png)
 <use figures/CD.png>
-Package pdftex.def Info: figures/CD.png  used on input line 60.
+Package pdftex.def Info: figures/CD.png  used on input line 58.
 (pdftex.def)             Requested size: 375.80542pt x 132.09491pt.
- [8
+ [6
 
- <./figures/CD.png>] [9]
+ <./figures/CD.png>] [7]
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 166.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 164.
 
-[10] [11])
-\openout2 = `sections/results.aux'.
-
- (sections/results.tex
-<figures/Project_Process_full.png, id=386, 1422.31375pt x 558.085pt>
+[8] [9]) (sections/results.tex
+<figures/Project_Process_full.png, id=397, 1422.31375pt x 558.085pt>
 File: figures/Project_Process_full.png Graphic file (type png)
 <use figures/Project_Process_full.png>
 Package pdftex.def Info: figures/Project_Process_full.png  used on input line 2
 4.
 (pdftex.def)             Requested size: 469.75499pt x 184.3219pt.
-
+ [10 <./figures/Project_Process_full.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrlong' on input line 31.
 
-[12
-
-
-
-
-
- <./figures/Project_Process_full.png>]
-<figures/CDsimple_sim_acc.png, id=398, 640.3925pt x 480.79625pt>
+<figures/CDsimple_sim_acc.png, id=412, 640.3925pt x 480.79625pt>
 File: figures/CDsimple_sim_acc.png Graphic file (type png)
 <use figures/CDsimple_sim_acc.png>
-Package pdftex.def Info: figures/CDsimple_sim_acc.png  used on input line 38.
+Package pdftex.def Info: figures/CDsimple_sim_acc.png  used on input line 36.
 (pdftex.def)             Requested size: 230.18251pt x 172.81506pt.
-<figures/CDsimple_sim_time.png, id=405, 640.3925pt x 480.79625pt>
+<figures/CDsimple_sim_time.png, id=419, 640.3925pt x 480.79625pt>
 File: figures/CDsimple_sim_time.png Graphic file (type png)
 <use figures/CDsimple_sim_time.png>
-Package pdftex.def Info: figures/CDsimple_sim_time.png  used on input line 43.
+Package pdftex.def Info: figures/CDsimple_sim_time.png  used on input line 41.
 (pdftex.def)             Requested size: 230.18251pt x 172.81506pt.
-) [13
+<figures/RectTrian_sim_acc.png, id=435, 575.14874pt x 426.59375pt>
+File: figures/RectTrian_sim_acc.png Graphic file (type png)
+<use figures/RectTrian_sim_acc.png>
+Package pdftex.def Info: figures/RectTrian_sim_acc.png  used on input line 54.
+(pdftex.def)             Requested size: 230.18251pt x 170.7256pt.
+<figures/RectTrian_sim_time.png, id=436, 575.14874pt x 426.59375pt>
+File: figures/RectTrian_sim_time.png Graphic file (type png)
+<use figures/RectTrian_sim_time.png>
+Package pdftex.def Info: figures/RectTrian_sim_time.png  used on input line 59.
+
+(pdftex.def)             Requested size: 230.18251pt x 170.7256pt.
+<figures/Standard_lowK_sim_acc.png, id=437, 575.14874pt x 426.59375pt>
+File: figures/Standard_lowK_sim_acc.png Graphic file (type png)
+<use figures/Standard_lowK_sim_acc.png>
+Package pdftex.def Info: figures/Standard_lowK_sim_acc.png  used on input line 
+64.
+(pdftex.def)             Requested size: 230.18251pt x 170.7256pt.
+<figures/Standard_lowK_sim_time.png, id=438, 575.14874pt x 426.59375pt>
+File: figures/Standard_lowK_sim_time.png Graphic file (type png)
+<use figures/Standard_lowK_sim_time.png>
+Package pdftex.def Info: figures/Standard_lowK_sim_time.png  used on input line
+ 69.
+(pdftex.def)             Requested size: 230.18251pt x 170.7256pt.
+<figures/Corr_lowK_sim_acc.png, id=439, 575.14874pt x 426.59375pt>
+File: figures/Corr_lowK_sim_acc.png Graphic file (type png)
+<use figures/Corr_lowK_sim_acc.png>
+Package pdftex.def Info: figures/Corr_lowK_sim_acc.png  used on input line 74.
+(pdftex.def)             Requested size: 230.18251pt x 170.7256pt.
+<figures/Corr_lowK_sim_time.png, id=440, 575.14874pt x 426.59375pt>
+File: figures/Corr_lowK_sim_time.png Graphic file (type png)
+<use figures/Corr_lowK_sim_time.png>
+Package pdftex.def Info: figures/Corr_lowK_sim_time.png  used on input line 79.
+
+(pdftex.def)             Requested size: 230.18251pt x 170.7256pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11
 
  <./figures/CDsimple_sim_acc.png> <./figures/CDsimple_sim_time.png>]
-\openout2 = `sections/discussion.aux'.
+[12 <./figures/RectTrian_sim_acc.png> <./figures/RectTrian_sim_time.png> <./fig
+ures/Standard_lowK_sim_acc.png> <./figures/Standard_lowK_sim_time.png> <./figur
+es/Corr_lowK_sim_acc.png> <./figures/Corr_lowK_sim_time.png>]
+<figures/Standard_medK_sim_acc.png, id=457, 575.14874pt x 426.59375pt>
+File: figures/Standard_medK_sim_acc.png Graphic file (type png)
+<use figures/Standard_medK_sim_acc.png>
+Package pdftex.def Info: figures/Standard_medK_sim_acc.png  used on input line 
+90.
+(pdftex.def)             Requested size: 230.18251pt x 170.7256pt.
+<figures/Corr_medK_sim_acc.png, id=458, 575.14874pt x 426.59375pt>
+File: figures/Corr_medK_sim_acc.png Graphic file (type png)
+<use figures/Corr_medK_sim_acc.png>
+Package pdftex.def Info: figures/Corr_medK_sim_acc.png  used on input line 95.
+(pdftex.def)             Requested size: 230.18251pt x 170.7256pt.
+<figures/Standard_highK_sim_acc.png, id=461, 575.14874pt x 426.59375pt>
+File: figures/Standard_highK_sim_acc.png Graphic file (type png)
+<use figures/Standard_highK_sim_acc.png>
+Package pdftex.def Info: figures/Standard_highK_sim_acc.png  used on input line
+ 104.
+(pdftex.def)             Requested size: 230.18251pt x 170.7256pt.
+<figures/Corr_highK_sim_acc.png, id=462, 575.14874pt x 426.59375pt>
+File: figures/Corr_highK_sim_acc.png Graphic file (type png)
+<use figures/Corr_highK_sim_acc.png>
+Package pdftex.def Info: figures/Corr_highK_sim_acc.png  used on input line 109
+.
+(pdftex.def)             Requested size: 230.18251pt x 170.7256pt.
+ [13 <./figures/Standard_medK_sim_acc.png> <./figures/Corr_medK_sim_acc.png> <.
+/figures/Standard_highK_sim_acc.png> <./figures/Corr_highK_sim_acc.png>])
+(sections/discussion.tex) (sections/conclusion.tex) [14
 
- (sections/discussion.tex) [14
 
 
+] (main.bbl [15
 
-]
-\openout2 = `sections/conclusion.aux'.
-
-
-(sections/conclusion.tex) [15
-
-
-
-
-] (main.bbl [16
-
-
-
-]) [17]
+])
+[16]
 \openout2 = `sections/appendix.aux'.
 
- (sections/appendix.tex)
-[18
+ (sections/appendix.tex
+<figures/Standard_medK_sim_time.png, id=516, 575.14874pt x 426.59375pt>
+File: figures/Standard_medK_sim_time.png Graphic file (type png)
+<use figures/Standard_medK_sim_time.png>
+Package pdftex.def Info: figures/Standard_medK_sim_time.png  used on input line
+ 9.
+(pdftex.def)             Requested size: 230.18251pt x 170.7256pt.
+<figures/Corr_medK_sim_time.png, id=517, 575.14874pt x 426.59375pt>
+File: figures/Corr_medK_sim_time.png Graphic file (type png)
+<use figures/Corr_medK_sim_time.png>
+Package pdftex.def Info: figures/Corr_medK_sim_time.png  used on input line 14.
+
+(pdftex.def)             Requested size: 230.18251pt x 170.7256pt.
+<figures/Standard_highK_sim_time.png, id=520, 575.14874pt x 426.59375pt>
+File: figures/Standard_highK_sim_time.png Graphic file (type png)
+<use figures/Standard_highK_sim_time.png>
+Package pdftex.def Info: figures/Standard_highK_sim_time.png  used on input lin
+e 23.
+(pdftex.def)             Requested size: 230.18251pt x 170.7256pt.
+<figures/Corr_highK_sim_time.png, id=521, 575.14874pt x 426.59375pt>
+File: figures/Corr_highK_sim_time.png Graphic file (type png)
+<use figures/Corr_highK_sim_time.png>
+Package pdftex.def Info: figures/Corr_highK_sim_time.png  used on input line 28
+.
+(pdftex.def)             Requested size: 230.18251pt x 170.7256pt.
+) [17
 
 
-] (main.aux (sections/preamble.aux) (sections/abstract.aux)
-(sections/introduction.aux) (sections/background.aux) (sections/results.aux)
-(sections/discussion.aux) (sections/conclusion.aux) (sections/appendix.aux))
+ <./figures/Standard_medK_sim_time.png> <./figures/Corr_medK_sim_time.png> <./f
+igures/Standard_highK_sim_time.png> <./figures/Corr_highK_sim_time.png>] (main.
+aux (sections/preamble.aux)
+(sections/abstract.aux) (sections/introduction.aux) (sections/appendix.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BC5820B5DDBC575856ECD59C3BA93A7E;2382.
+(rerunfilecheck)             Checksum: 80F1BEF7EA7B87FF3D095C079CB7962E;2584.
  ) 
 Here is how much of TeX's memory you used:
- 27661 strings out of 479321
- 494382 string characters out of 2855629
- 1118758 words of memory out of 3000000
- 44173 multiletter control sequences out of 15000+600000
- 453607 words of font info for 209 fonts, out of 8000000 for 9000
+ 27742 strings out of 479321
+ 496720 string characters out of 2855629
+ 946970 words of memory out of 3000000
+ 44242 multiletter control sequences out of 15000+600000
+ 453864 words of font info for 213 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,15n,116p,1114b,693s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 117i,15n,116p,1138b,693s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<
 C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
 mbx10.pfb><C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
@@ -1319,9 +1378,9 @@ r/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 b><C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.
 pfb><C:/Users/uniUser/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on main.pdf (19 pages, 1278673 bytes).
+Output written on main.pdf (18 pages, 1756687 bytes).
 PDF statistics:
- 516 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 50376 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 611 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
+ 50446 words of extra memory for PDF output out of 51595 (max. 10000000)
 

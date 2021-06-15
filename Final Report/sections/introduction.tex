@@ -5,7 +5,7 @@
 \raggedright
 
 Single-particle reconstruction in \acrshort{cryo-EM} is a powerful image-processing tool used to determine the 3D structure of biological macromolecular complexes.
-2D images (micrographs) of a macromolecule are taken by an electron microscope. Essentially, the set of all micrographs for a given macromolecule spans a 3D model of the macromolecule. Thus, single-particle reconstruction is using the micrographs to build a 3D model of the macromolecule.\\
+2D images (micrographs) of a macromolecule are taken by an electron microscope and particle picking is performed to extract 2D images of the macromolecules. Essentially, the set of all the 2D images for a given macromolecule spans a 3D model of the macromolecule. Thus, single-particle reconstruction is using the 2D images to build a 3D model of the macromolecule.\\
 
 Due to high sensitivity of the biological macromolecules to radiation damage, electron microscope provides limited electron doses when producing micrographs. This and other factors like low contrast of micrographs and digitalization of the images result in \acrshort{cryo-EM} data having very low \acrfull{SNR}\cite{9016106}.\\
 
@@ -20,4 +20,5 @@ In our project we propose a different approach for \acrshort{cryo-EM} data class
 	\item Each community represent a single conformation of a sampled macromolecule.
 \end{itemize}
 
-For the sake of an abstraction of the \acrshort{cryo-EM} data we will use the Heterogeneous \acrfull{MRA} statistical model. Throughout our project we use the simplified 1D version of the model.
+For the sake of an abstraction of the \acrshort{cryo-EM} data we use the Heterogeneous \acrfull{MRA} statistical model, throughout our project we use the simplified 1D version of the model.\\
+In our project we introduce the modified KMeans algorithm that takes into account the characteristics of the \acrshort{MRA} data. The modified KMeans is used as a reference point against which \acrfull{CD} algorithms are evaluated. 

@@ -1,5 +1,10 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces \textbf {Project process.} Further processing stage presents the idea behind clustering the data and is outside of the scope of the project.\relax }}{2}{figure.caption.2}%
-\contentsline {figure}{\numberline {2}{\ignorespaces \textbf {Example of \acrshort {MRA} observations at different SNR levels.} Each column shows a shifted distinct signal at different noise levels. We can see that for low \acrshort {SNR} the task of signal estimation is quite challenging.\relax }}{7}{figure.caption.7}%
-\contentsline {figure}{\numberline {3}{\ignorespaces \textbf {Graph partition by \acrlong {CD}.} In this example for the sake of simplicity an unweighed graph is used. Note that in our project we used weighted graphs.\relax }}{8}{figure.caption.8}%
-\contentsline {figure}{\numberline {4}{\ignorespaces \textbf {Full project process.}\relax }}{12}{figure.caption.10}%
-\contentsline {figure}{\numberline {5}{\ignorespaces \textbf {\acrlong {CD} algorithms performance evaluation.} In both graphs, for each \acrshort {SNR} value ten different random graphs were evaluated and the results were averaged.\relax }}{13}{figure.caption.11}%
+\contentsline {figure}{\numberline {2}{\ignorespaces \textbf {Example of \acrshort {MRA} observations at different SNR levels.} Each column shows a shifted distinct signal at different noise levels. We can see that for low \acrshort {SNR} the task of signal estimation is quite challenging.\relax }}{5}{figure.caption.7}%
+\contentsline {figure}{\numberline {3}{\ignorespaces \textbf {Graph partition by \acrlong {CD}.} In this example for the sake of simplicity an unweighed graph is used. Note that in our project we used weighted graphs.\relax }}{6}{figure.caption.8}%
+\contentsline {figure}{\numberline {4}{\ignorespaces \textbf {Full process.} Full process of graph creation and partition by \acrshort {CD}.\relax }}{10}{figure.caption.10}%
+\contentsline {figure}{\numberline {5}{\ignorespaces \textbf {\acrlong {CD} algorithms performance evaluation.} In both graphs, for each \acrshort {SNR} value ten different random graphs were evaluated and the results were averaged.\relax }}{11}{figure.caption.11}%
+\contentsline {figure}{\numberline {6}{\ignorespaces \textbf {Low $K$ \acrshort {CD} and KMeans comparison. $K=2$} \relax }}{12}{figure.caption.12}%
+\contentsline {figure}{\numberline {7}{\ignorespaces \textbf {Medium $K$ \acrshort {CD} and KMeans comparison.} $K=5$\relax }}{13}{figure.caption.13}%
+\contentsline {figure}{\numberline {8}{\ignorespaces \textbf {High $K$ \acrshort {CD} and KMeans comparison.} $K=10$\relax }}{13}{figure.caption.14}%
+\contentsline {figure}{\numberline {9}{\ignorespaces \textbf {Medium $K$ \acrshort {CD} and KMeans time performances.} $K=5$\relax }}{17}{figure.caption.15}%
+\contentsline {figure}{\numberline {10}{\ignorespaces \textbf {High $K$ \acrshort {CD} and KMeans time performances.} $K=10$\relax }}{17}{figure.caption.16}%

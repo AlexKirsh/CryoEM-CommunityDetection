@@ -13,6 +13,12 @@ Tamir Bendory, Alberto Bartesaghi, and Amit Singer.
   computational challenges, and opportunities.
 \newblock {\em IEEE Signal Processing Magazine}, 37(2):58--76, 2020.
 
+\bibitem{Bendory_2018}
+Tamir Bendory, Nicolas Boumal, Chao Ma, Zhizhen Zhao, and Amit Singer.
+\newblock Bispectrum inversion with application to multireference alignment.
+\newblock {\em IEEE Transactions on Signal Processing}, 66(4):1037–1050, Feb
+  2018.
+
 \bibitem{Blondel_2008}
 Vincent~D Blondel, Jean-Loup Guillaume, Renaud Lambiotte, and Etienne Lefebvre.
 \newblock Fast unfolding of communities in large networks.
@@ -28,6 +34,11 @@ Saikat Chowdhury, Stephanie~A Ketcham, Trina~A Schroer, and Gabriel~C Lander.
 \newblock Structural organization of the dynein--dynactin complex bound to
   microtubules.
 \newblock {\em Nature structural \& molecular biology}, 22(4):345--347, 2015.
+
+\bibitem{OHSU-overleaf-dissertation-template}
+B.~A. Cordier.
+\newblock Ohsu latex dissertation template, 2021.
+\newblock Available on Overleaf.
 
 \bibitem{Danon_2005}
 Leon Danon, Albert Díaz-Guilera, Jordi Duch, and Alex Arenas.

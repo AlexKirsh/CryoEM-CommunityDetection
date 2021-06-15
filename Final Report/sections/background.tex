@@ -6,7 +6,7 @@
 
 \subsection{Heterogeneous 1D \acrlong{MRA} model}
 
-In our project we will use the Heterogeneous 1D \acrlong{MRA} statistical model\cite{boumal2018heterogeneous} (\acrshort{MRA} shortly) for the sake of \acrshort{cryo-EM} data abstraction. Bellow is the definition of the model.\\
+In our project we use the Heterogeneous 1D \acrfull{MRA} statistical model\cite{boumal2018heterogeneous} for the sake of \acrshort{cryo-EM} data abstraction. Below is the definition of the model.\\
 Let $x_1,...,x_K \in \mathbb{R}^L$ be $K$ unknown normalized signals (distinct even up to shift) and let $R_s$ be the cyclic shift operator: $(R_sx)[n]=x[\langle n-s \rangle_L]$. We are given $N$ observations:
 
 \begin{equation}
@@ -25,7 +25,7 @@ Simply speaking, \acrshort{MRA} observation is a randomly chosen signal $x_{k_j}
   \label{fig:MRA_exmp}
 \end{figure}
 
-In order to build a weighted graph from \acrshort{MRA} observations, a similarity measure between observations must be defined. We use the cross-correlation, as its invariance to shift holds great value:
+For the sake of data classification by the methods we suggest in our project, we define a similarity measure between observations. We use the cross-correlation, as its invariance to shift holds great value:
 
 \begin{equation}
 \label{eqn:sim_def}
@@ -38,8 +38,6 @@ The convolution theorem states that the convolution of two signals  equals to th
 \label{eqn:sim_FFT}
 (x \star y)_n = \mathcal{F}^{-1}\lbrace X^* \cdot Y {\rbrace}_n
 \end{equation}
-
-It should be noted that in order to obtain normalized cross-correlation, \acrshort{MRA} samples must first be normalized.
 
 \clearpage
 
@@ -201,9 +199,9 @@ an algorithm's performance may receive a 'good' score by some of the criteria bu
 
 \vspace{10pt}
 
-\subsection{K-means algorithm}
-In order to examine if \acrshort{CD} is beneficial compared to other clustering methods, we compare the \acrshort{CD} algorithms performance against the traditional K-means algorithm.
-K-means is a well known clustering algorithm used widely for pattern recognition applications, below is the description of the K-means algorithm\cite{10.5555/46712}.\\
+\subsection{Modified K-means algorithm}
+In order to examine if \acrshort{CD} is beneficial compared to other clustering methods, we compare the \acrshort{CD} algorithms performance against a different method of clustering. We present a modified K-means algorithm that takes into account the fact that the \acrshort{MRA} data is shifted.
+We start by introducing the traditional KMeans algorithm\cite{10.5555/46712}, a well known clustering algorithm used widely for pattern recognition applications.
 Let $X=x_1,...,x_n \in \mathbb{R}^L$ be the set of $L$-dimensional points to be clustered into $K$ clusters, $C=c_1,...,c_K$. Each cluster is represented by a centroid $\mu_k$, $k=1,...,K$, which is the mean of all points in the cluster. K-means finds a partition of $X$ into $K$ clusters such that the squared error of the distances between the centroids of the clusters and the points in the corresponding clusters is minimized. Therefore, the goal of K-means is to minimize the function in \textbf{Eq. \ref{eqn:kmeans_error}}.
 
 \begin{equation}
@@ -224,6 +222,9 @@ The algorithm's operation can be summarized in the following steps:
 \item Recalculate the centroids of the new clusters by computing the mean of each new cluster.
 \item Repeat steps (2) and (3) until cluster membership stabilizes.
 \end{enumerate}
+Our modified algorithm introduces two adjustments to the algorithm presented above:
+\begin{enumerate}
+\item The distance metric used is the Euclidean distance between pairs of centroids and data points shifted, such that the cross correlation between each data point and centroid is maximal. Simply, data points were first shifted, then the distance was calculated.
+\item Centroids were calculated using \textit{template matching}, i.e first sample of each cluster was chosen as the reference point (template) and every other point in the cluster was shifted such that the cross-correlation between each point and the first point is maximal. After the shifting mean is calculated.
+\end{enumerate}
 For a fixed maximal number of iterations $t$ the time complexity of K-means is $O(ndKt)$ where $n$ is the number of data points, $d$ the dimension of each point and $K$ number of specified clusters.
-
-\clearpage

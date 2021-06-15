@@ -4,7 +4,7 @@
 
 \raggedright
 
-Some detailed discussion.
-
-\subsection{A subheading}
-Blah blah blah
+The simulations in the previous section presented the clustering quality and execution time performances of both the \acrshort{CD} and the modified KMeans algorithms.\\
+In the first part, the best \acrshort{CD} algorithms were selected based on their clustering ability and runtime. Even though the algorithms that were chosen use different strategies to find communities within a graph and have different runtime, the communities that were found by the different algorithms were very similar. Infomap, edge betweenness and label propagation have failed to partition the graph even for high \acrshort{SNR}. Most likely the edge weights that were used are incompatible with the algorithms operation, further investigation is required.\\
+In the second part, the best \acrshort{CD} algorithms were evaluated against the modified KMeans algorithm. For \acrshort{MRA} data with low to medium $K$ \acrshort{CD} and KMeans algorithms performed comparably well, \acrshort{CD} performed even better for low and medium values of $K$ for uncorrelated data, and for low $K$ for correlated data. For high values of $K$ KMeans outperforms the \acrshort{CD} algorithms, but not by a high margin for uncorrelated data. Better performance of KMeans was expected, since KMeans receives the number $K$ as a parameter, whereas \acrshort{CD} algorithms do not.\\
+In regard to the runtime of the algorithms, KMeans execution time was generally worse than \acrshort{CD}, except for Louvain, but Louvain can be eliminated from the selected algorithms and Leiden, which is the improved version, can be used. Generally Leiden was the best performing \acrshort{CD} algorithm, with the best overall clustering quality and an adequate runtime.

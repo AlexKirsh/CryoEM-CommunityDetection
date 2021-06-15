@@ -4,4 +4,32 @@
 
 \raggedright
 
-\lipsum
+\begin{figure}[h]
+\begin{subfigure}[b]{0.49\linewidth}
+\includegraphics[width=\linewidth]{"figures/Standard_medK_sim_time".png}
+\caption{\textbf{Execution time simulation.} Normal i.i.d.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.49\linewidth}
+\includegraphics[width=\linewidth]{"figures/Corr_medK_sim_time".png}
+\caption{\textbf{Execution time simulation.} Correlated normal.}
+\end{subfigure}
+\caption{\textbf{Medium $K$ \acrshort{CD} and KMeans time performances.} $K=5$}
+\label{fig:medK_time_sim}
+\end{figure}
+
+\begin{figure}[h]
+\begin{subfigure}[b]{0.49\linewidth}
+\includegraphics[width=\linewidth]{"figures/Standard_highK_sim_time".png}
+\caption{\textbf{Execution time simulation.} Normal i.i.d.}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.49\linewidth}
+\includegraphics[width=\linewidth]{"figures/Corr_highK_sim_time".png}
+\caption{\textbf{Execution time simulation.} Correlated normal.}
+\end{subfigure}
+\caption{\textbf{High $K$ \acrshort{CD} and KMeans time performances.} $K=10$}
+\label{fig:highK_time_sim}
+\end{figure}
+
+The template that was used to make this document was provided by the courtesy of Benjamin Cordier\cite{OHSU-overleaf-dissertation-template}.

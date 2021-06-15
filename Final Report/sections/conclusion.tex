@@ -4,7 +4,9 @@
 
 \raggedright
 
-This section would contain the conclusions drawn from the entire body of work.
+In our project we presented a method of classifying \acrshort{cryo-EM} micrographs by using \acrshort{CD} to separate data into clusters that represent different molecular conformations. The proposed approach was tested on the simplified 1D \acrshort{MRA} model. State-of-the-art \acrshort{CD} algorithms were evaluated for clusters quality and runtime against the KMeans algorithm with modifications we made, that account for the characteristics of the \acrshort{MRA} data, particularly the fact that the data is shifted.\\
+In our simulations we observed that even though KMeans had the advantage of an extra parameter $K$ that defines the number of real clusters, \acrshort{CD} algorithms performed comparably well for \acrshort{MRA} data generated from uncorrelated signals, and even better for lower values of $K$. Furthermore, unlike the KMeans algorithm that needed to be modified to account for the input data characteristics, \acrshort{CD} algorithms were implemented in a naive fashion with no regard to the type of input that is presented. In summary, even for relatively high values of $K$, i.e high data heterogeneity, \acrshort{CD} algorithms perform well even for relatively low levels of \acrshort{SNR}, though when the signals are correlated, performance of \acrshort{CD} is poor for high level of heterogeneity and is outperformed by our modified KMeans algorithm.
 
-\subsection{A subheading}
-\lipsum
+\subsection{Further work}
+KMeans algorithm modifications we composed use template matching for means computation, which is known to fail even at moderate values of \acrshort{SNR} \cite{Bendory_2018}. This can explain the fact that \acrshort{CD} algorithms occasionally outperform KMeans, even with the disadvantage of not knowing the correct number of graph partitions. Bispectrum inversion\cite{Bendory_2018} can be used instead of template matching to improve our modified KMeans algorithm performance. It can also be used to improve the performance of \acrshort{CD} by extracting a similarity measure from the \textit{invariant features} estimated by the bispectrum inversion method, and use it instead of, or in addition to, the cross-correlation.\\
+Aside from improvements that can be made to partition 1D \acrshort{MRA} data, our solution needs to be tested on actual \acrshort{cryo-EM} data to conclude if it presents improvement upon the existing methods.

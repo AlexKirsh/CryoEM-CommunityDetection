@@ -1,19 +1,19 @@
 \contentsline {section}{Abstract}{2}{section*.1}%
 \contentsline {section}{List of Figures}{3}{section*.3}%
-\contentsline {section}{List of Tables}{4}{section*.4}%
-\contentsline {section}{List of Abbreviations}{5}{section*.5}%
-\contentsline {section}{\numberline {1}Introduction}{6}{section.1}%
-\contentsline {section}{\numberline {2}Background}{7}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Heterogeneous 1D \acrlong {MRA} model}{7}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Community detection}{8}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Performance evaluation}{10}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}K-means algorithm}{11}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Results}{12}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Process overview}{12}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}\acrlong {CD} best performers selection}{12}{subsection.3.2}%
+\contentsline {section}{List of Tables}{3}{section*.4}%
+\contentsline {section}{List of Abbreviations}{3}{section*.5}%
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {section}{\numberline {2}Background}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Heterogeneous 1D \acrlong {MRA} model}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Community detection}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Performance evaluation}{8}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Modified K-means algorithm}{9}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Results}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Process overview}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}\acrlong {CD} best performers selection}{11}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Community Detection and KMeans comparison}{11}{subsection.3.3}%
 \contentsline {section}{\numberline {4}Discussion}{14}{section.4}%
-\contentsline {subsection}{\numberline {4.1}A subheading}{14}{subsection.4.1}%
-\contentsline {section}{\numberline {5}Conclusion}{15}{section.5}%
-\contentsline {subsection}{\numberline {5.1}A subheading}{15}{subsection.5.1}%
-\contentsline {section}{\numberline {6}References}{16}{section.6}%
-\contentsline {section}{\numberline {7}Appendix}{18}{section.7}%
+\contentsline {section}{\numberline {5}Conclusion}{14}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Further work}{14}{subsection.5.1}%
+\contentsline {section}{\numberline {6}References}{15}{section.6}%
+\contentsline {section}{\numberline {7}Appendix}{17}{section.7}%
